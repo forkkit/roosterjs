@@ -22,6 +22,11 @@ export { default as extractClipboardEvent } from './utils/extractClipboardEvent'
 export { default as findClosestElementAncestor } from './utils/findClosestElementAncestor';
 export { default as fromHtml } from './utils/fromHtml';
 export { default as getComputedStyles, getComputedStyle } from './utils/getComputedStyles';
+export {
+    default as getPendableFormatState,
+    PendableFormatCommandMap,
+    PendableFormatNames,
+} from './utils/getPendableFormatState';
 export { default as getTagOfNode } from './utils/getTagOfNode';
 export { default as isBlockElement } from './utils/isBlockElement';
 export { default as isNodeEmpty } from './utils/isNodeEmpty';
@@ -34,6 +39,8 @@ export { default as unwrap } from './utils/unwrap';
 export { default as wrap } from './utils/wrap';
 export { getNextLeafSibling, getPreviousLeafSibling } from './utils/getLeafSibling';
 export { getFirstLeafNode, getLastLeafNode } from './utils/getLeafNode';
+export { default as getTextContent } from './utils/getTextContent';
+export { default as splitTextNode } from './utils/splitTextNode';
 
 export { default as VTable, VCell } from './table/VTable';
 
@@ -42,3 +49,9 @@ export { default as createRange, getRangeFromSelectionPath } from './selection/c
 export { default as getPositionRect } from './selection/getPositionRect';
 export { default as isPositionAtBeginningOf } from './selection/isPositionAtBeginningOf';
 export { default as getSelectionPath } from './selection/getSelectionPath';
+
+export { default as addSnapshot } from './snapshots/addSnapshot';
+export { default as canMoveCurrentSnapshot } from './snapshots/canMoveCurrentSnapshot';
+export { default as clearProceedingSnapshots } from './snapshots/clearProceedingSnapshots';
+export { default as moveCurrentSnapsnot } from './snapshots/moveCurrentSnapsnot';
+export { default as createSnapshots } from './snapshots/createSnapshots';
